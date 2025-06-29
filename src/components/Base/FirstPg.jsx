@@ -26,7 +26,7 @@ const FirstPg = () => {
             Give ⭐ to my repo
           </a>
           <a
-           href="/hi"
+           href="/read"
             className="bg-blue-900 border-3 font-semibold border-blue-900 text-md text-white py-3 px-7 rounded-full hover:border-black hover:text-white hover:bg-red-500"
           >
             Let's Learn 🚀

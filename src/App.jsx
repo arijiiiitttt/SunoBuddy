@@ -33,7 +33,7 @@ const App = () => {
         <Route path="/signin" element={<Signin/>} />
        
         <Route
-          path="/hi"
+          path="/read"
           element={
             <ProtectedRoute>
             <Explainer/>
