@@ -1,0 +1,45 @@
+"use client"
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+
+
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <header className="bg-white w-full h-[7rem] flex items-center justify-center fixed top-0 z-50">
+      <div className="flex items-center space-x-6">
+        <img
+          src="./logo/logoo.png"
+          alt="Logo"
+          className="w-11 h-11"
+        />
+        <ul className="hidden md:flex space-x-6 text-[1rem] font-medium">
+          <li><a href="/underprocess" className="popblack underline-offset-4 font-semibold underline decoration-2 decoration-underline decoration-blue-500 hover:text-red-600 transition">Docs</a></li>
+          <li><a href="/underprocess" className="text-gray-800    hover:text-red-600 transition">Features</a></li>
+          <li><a href="/notfound" className="line-through underline-offset-8 decoration-red-500 font-bold hover:text-red-600 transition">Pricing</a></li>
+          <li><a href="" className="text-gray-800  hover:text-red-600 transition">About</a></li>
+          <li><a href="#"  className='popblack underline-offset-4 font-semibold underline decoration-2 decoration-wavy decoration-red-500'>Contact Me</a></li>
+        </ul>
+      </div>
+
+       <div className="md:hidden">
+        <button onClick={() => setIsOpen(!isOpen)} className="text-2xl text-gray-800">
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </button>
+      </div>
+{isOpen && (
+        <div className="absolute top-[7rem] left-0 w-full bg-white border-t border-gray-200 md:hidden z-40">
+          <ul className="flex flex-col items-center py-6 space-y-4 text-[1rem] font-medium">
+            <li><a href="/underprocess" className="popblack underline-offset-4 font-semibold underline decoration-2 decoration-blue-500 hover:text-red-600 transition">Docs</a></li>
+            <li><a href="/underprocess" className="text-gray-800 hover:text-red-600 transition">Features</a></li>
+            <li><a href="/notfound" className="line-through underline-offset-8 decoration-red-500 font-bold hover:text-red-600 transition">Pricing</a></li>
+            <li><a href="#" className="text-gray-800 hover:text-red-600 transition">About</a></li>
+            <li><a href="#" className="popblack underline-offset-4 font-semibold underline decoration-2 decoration-wavy decoration-red-500">Contact Me</a></li>
+          </ul>
+        </div>
+      )}
+    </header>
+  );
+}
+
+export default Header;
