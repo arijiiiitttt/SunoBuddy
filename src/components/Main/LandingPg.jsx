@@ -9,6 +9,7 @@ import Features from '../Base/Features';
 import Frameworks from '../Base/Frameworks';
 import PatternWrapper from '../Base/PatternWrapper';
 
+
 const LandingPg = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,7 +18,7 @@ const LandingPg = () => {
       {/* Header */}
       <header className="bg-white w-full h-[7rem] flex items-center justify-center fixed top-0 z-50">
         <div className="flex items-center space-x-6">
-          <img src="./logo/logoo.png" alt="Logo" className="w-11 h-11" />
+          <img src="./logos/logooo.png" alt="Logo" className="w-18 h-18" />
           <ul className="hidden md:flex space-x-6 text-[1rem] font-medium">
             <li><a href="/underprocess" className="popblack underline-offset-4 font-semibold underline decoration-2 decoration-underline decoration-blue-500 hover:text-red-600 transition">Docs</a></li>
             <li><a href="/underprocess" className="text-gray-800 hover:text-red-600 transition">Features</a></li>
@@ -40,7 +41,7 @@ const LandingPg = () => {
               <li><a href="/underprocess" className="text-gray-800 hover:text-red-600 transition">Features</a></li>
               <li><a href="/notfound" className="line-through underline-offset-8 decoration-red-500 font-bold hover:text-red-600 transition">Pricing</a></li>
               <li><a href="#" className="text-gray-800 hover:text-red-600 transition">About</a></li>
-              <li><a href="#" className="popblack underline-offset-4 font-semibold underline decoration-2 decoration-wavy decoration-red-500">Contact Me</a></li>
+              <li><a href="#cont" className="popblack underline-offset-4 font-semibold underline decoration-2 decoration-wavy decoration-red-500">Contact Me</a></li>
             </ul>
           </div>
         )}
@@ -56,7 +57,10 @@ const LandingPg = () => {
       </PatternWrapper>
 
       {/* Footer WITHOUT pattern */}
-      <Fooder />
+      <div id='cont'>
+<Fooder />
+      </div>
+      
     </>
   );
 };

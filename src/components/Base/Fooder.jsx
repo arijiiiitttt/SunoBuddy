@@ -8,7 +8,7 @@ import { IoMdGlobe } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-blue-200 text-gray-800">
+    <footer className="relative bg-blue-100/50 text-gray-800">
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-10 lg:flex lg:justify-between">
         {/* Left Text */}
@@ -22,11 +22,32 @@ const Footer = () => {
           </h1>
 
           {/* Icons */}
-          <div className="flex mt-6 space-x-5 text-[22px] pointer">
-            <IoMdGlobe className="text-[#5865F2] pointer" href="https://yourwebsite.com" target="_blank" />
-            <FaGithub className="text-gray-700 pointer" href="https://github.com/yourapp" target="_blank" />
-            <FaLinkedin className="text-[#0A66C2] pointer" href="https://linkedin.com/in/yourapp" target="_blank" />
-          </div>
+          <div className="flex mt-6 space-x-5 text-[22px]">
+      <a
+        href="#" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[#5865F2] cursor-pointer"
+      >
+        <IoMdGlobe />
+      </a>
+      <a
+        href="https://github.com/arijiiiitttt/SunoBuddy"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-700 cursor-pointer"
+      >
+        <FaGithub />
+      </a>
+      <a
+        href="*" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[#0A66C2] cursor-pointer"
+      >
+        <FaLinkedin />
+      </a>
+    </div>
         </div>
 
         {/* Right Sections */}
@@ -63,8 +84,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* Divider - Styled nicely */}
       <div className="max-w-7xl mx-auto px-8">
         <hr className="border-t-2 border-gray-300 rounded-full opacity-70" />
       </div>
@@ -73,13 +92,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col lg:flex-row justify-between items-center text-sm text-gray-700">
         <span className="text-xl font-bold text-[#4044f4] mb-2 lg:mb-0"
           style={{ fontFamily: "Brico" }}>
-          Accessibility Tool
+          सुनोBuddy
         </span>
         <p className="text-center lg:text-right max-w-3xl">
           Made with
           <span className=" mx-1">💗 by</span>
-          <a href="https://github.com/yourapp" target="_blank" className="text-blue-600 ">
-            Your Name/Team
+          <a href="" target="_blank" className="text-blue-600 ">
+            by Surbhi & Arijit
           </a>
         </p>
       </div>

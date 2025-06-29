@@ -13,6 +13,19 @@ body {
 }
 
 
+.text-outline {
+  -webkit-text-stroke: 1px black;
+}
+
+.text-outline-white {
+  -webkit-text-stroke: 1px white;
+}
+
+.text-outline-thick {
+  -webkit-text-stroke: 0.7px black;
+}
+
+
 
 @font-face {
   font-family:Bowlby ;
@@ -97,3 +110,4 @@ body {
 .Brico {
     font-family: 'Brico', sans-serif;
 }
+

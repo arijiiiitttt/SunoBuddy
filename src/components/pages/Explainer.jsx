@@ -469,9 +469,9 @@ const Explainer = () => {
             <header className={`w-full max-w-6xl flex justify-between items-center py-4 px-4 sm:px-6 lg:px-8 ${highContrast ? 'text-white' : 'text-gray-800'}`}>
                 
                 <img
-                    src="/your-icon.png" 
+                    src="./logos/logooo.png" 
                     alt="Your App Logo"
-                    className="h-8 sm:h-9 w-auto object-contain" 
+                    className="md:h-24 h-9 w-auto object-contain" 
                     onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/36x36/aabbcc/ffffff?text=Logo'; }}
                 />
 

@@ -9,7 +9,7 @@ const Header = () => {
     <header className="bg-white w-full h-[7rem] flex items-center justify-center fixed top-0 z-50">
       <div className="flex items-center space-x-6">
         <img
-          src="./logo/logoo.png"
+          src="./logos/logooo.png"
           alt="Logo"
           className="w-11 h-11"
         />

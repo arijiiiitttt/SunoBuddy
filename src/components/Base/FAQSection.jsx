@@ -22,7 +22,7 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100/50 flex flex-col items-center justify-center p-4 sm:p-10">
+    <div className="min-h-screen flex flex-col items-center justify-center p-4 sm:p-10">
       <div className="text-center mb-6">
         <p className="text-sm text-gray-500 font-medium uppercase mb-2">Accessibility Tool FAQ</p>
         <h1 className="text-3xl sm:text-4xl bowl text-gray-900 mb-2">Your tool's Questions, Answered.</h1>
