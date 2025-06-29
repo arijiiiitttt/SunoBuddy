@@ -29,7 +29,7 @@ body {
 
 @font-face {
   font-family:Bowlby ;
-  src: url(./fonts/Bowlby_One/BowlbyOne-Regular.ttf);
+  src: url(/public/fonts/Bowlby_One/BowlbyOne-Regular.ttf);
 }
 .bowl{
   font-family:Bowlby,sans-serif;
@@ -46,7 +46,7 @@ body {
 @font-face {
   font-family: 'PoppinsBlack';
   font-weight: 900;
-  src: url(/public/Fonts/Poppins/Poppins-Black.ttf);
+  src: url(/public/fonts/Poppins/Poppins-Black.ttf);
 }
 .popblack {
   font-family: 'PoppinsBlack', sans-serif;
