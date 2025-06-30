@@ -24,7 +24,7 @@ const Footer = () => {
           {/* Icons */}
           <div className="flex mt-6 space-x-5 text-[22px]">
       <a
-        href="#" 
+        href="https://suno-buddy.vercel.app/" 
         target="_blank"
         rel="noopener noreferrer"
         className="text-[#5865F2] cursor-pointer"
